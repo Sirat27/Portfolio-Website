@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio website</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8dc130ad80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <a href="https://linktr.ee/admin"><img src = "logo3.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer | Data Scientist</p>
+            <h1>Hi, I'm <span>Sirat Singh Anand</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------------about-------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there! I am Sirat Singh Anand, I am currently pursuing BTech in Computer Science from Manipal University Jaipur.
+                    I am a full stack developer and have a good grip over various web frameworks such as ReactJs and NodeJs. I am also
+                    well versed in Data science and Machine Learning. 
+                    I am currently working as a Fullstack intern at WictroniX.
+                    I am seeking out learning opportunities and internships to gain real-world experience and hope to make a positive impact
+                    on the world through technology in the future. I am confident that my strong work ethics and determination will help me 
+                    achieve my goals and succeed in my chosen career.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Building fully functioning websites</li>
+                        <li><span>Object Oriented programming</Object></span><br></li>
+                        <li><span>Data Structures and Algorithms</span><br>Solving problems using C++/C/Java</li>
+                        <li><span>Machine Learning and Data science</span><br>Data cleaning and data processing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Full stack developer intern (June-August,2023)</span><br>At WictroniX</li>
+                        <li><span>Data Analyst Trainee (June-July,2023)</span><br>At MedTourEasy</li>
+                        <li><span>Web Developer intern (Jan-May,2023)</span><br>At Simtrak Solutions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors of Technology - Computer Science Engineering (2020-2024)</span><br>Manipal University Jaipur, Rajasthan</li>
+                        <li><span>High school Diploma - Science & Computer applications (2019-2020)</span><br>Delhi Public School RK Puram, Delhi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------------portfolio-------------------------- -->
+
+<div id = "portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Library Management Web app</h3>
+                    <p>This web app helps to manage and maintain the library books, records and issue/ withdrawl requests.</p>
+                    <a href="https://github.com/Sirat27/LIBRARY-MANAGEMENT-SYSTEM"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Voice and Text based Chatbot</h3>
+                    <p>ML based chatbot that helps and guides the user by providing them a list of projects that they should make in their final year</p>
+                    <a href="https://github.com/Sirat27/Voice-and-Text-based-Chatbot"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Cryptography text encryption web app</h3>
+                    <p>Allows the user to set an encryption key and encrypt the text of their choice.</p>
+                    <a href="https://github.com/Sirat27/Text-Encryption-web-app"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Sirat27?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----------------------research-------------------------------- -->
+
+<div id = "services">
+    <div class="container">
+        <h1 class="sub-title">My Publications</h1>
+        <div class="services-list">
+            <div>
+                <a href="https://github.com/Sirat27/Face-Mask-Detection-"><i class="fas fa-code"></i></a>
+                <h2>Face Mask Detection Using CNN VGG16 model</h2>
+                <p>Published on Zenodo.org</p>
+                <a href="https://zenodo.org/record/8150449"><u>LEARN MORE</u></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------------contact------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a target="_blank" href="mailto:sirat2711@gmail.com"><i class="fas fa-paper-plane"></i></a>sirat2711@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jason.gupta.90?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/sirat.anand27?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sirat-singh-anand-395491221/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sirat27"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>&nbsp; Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sirat. Developed in 2023.</p>
+    </div>
+</div>
+
+<!-- ------------------------------javascript--------------------------------- -->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzCvxudvwFKx8oEOmOEslXWHvExyYqUbYtajK48FZzC6o7s1ax5uEQ3Po4w25GEJSsP/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
